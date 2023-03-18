@@ -12,12 +12,13 @@ void main() {
         backgroundColor: Colors.greenAccent.shade200, // here colors is a enum
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: const <Widget>[
               Text('Hello World!'),
               Image(
-                  image: NetworkImage(
-                'https://images.alphacoders.com/164/164903.jpg',
-              )),
+                image: AssetImage('assets/darling.jpg'),
+              ),
             ],
           ),
         ),
